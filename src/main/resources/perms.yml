@@ -1,0 +1,9 @@
+# HybridSync permission file generated using HybridSync-${project.version}
+# This plugin mainly supports 1.8.8, but may work in later versions
+
+core:
+  main-cmd-admin: 'hybridsync.core.admin'
+
+discord:
+  bot-send: 'hybridsync.bot.send'
+  link: 'hybridsync.link'

@@ -1,0 +1,60 @@
+# HybridSync messages file generated using HybridSync-1.0
+# This plugin mainly supports 1.8.8, but may work in later versions
+
+core:
+  prefix: '&c&lHybrid &8»&f'
+  console-error: '&cYou must be a player to execute this command.'
+  no-permission: '%prefix% You do not have permission to execute this command.'
+  404: '%prefix% Page not found. Try &c/hs help &ffor help.'
+  module-disabled: '%prefix% The module &c%module% &fis disabled.'
+  core-cmd-admin:
+    - '%prefix% This server is running &cHybridSync v&c%version% &fby &cCaledonian EH'
+    - '&7&o(( Type &f&o/hybridsync help &7&ofor more &f&oInformation ))'
+  core-cmd-player:
+    - '%prefix% This server is running &cHybridSync &fby &cCaledonian EH'
+    - '&7&o(( You do not have &f&oPermission &7&oto view further ))'
+
+help:
+  page1:
+    - '&c*&8&m-----------&c*&8&m------------------&c*&8&m-----------&c*'
+    - '&c     Hybrid Sync'
+    - '&f * &c/hybridsync &8- &fMain plugin command'
+    - '&f * &c/hybridsync reload &8- &fNot supported yet'
+    - '&f * &c/hybridsync bot &8- &fBot related commands'
+    - '&c*&8&m-----------&c*&8&m------------------&c*&8&m-----------&c*'
+  bot:
+    - '&c*&8&m-----------&c*&8&m------------------&c*&8&m-----------&c*'
+    - '&c     Hybrid Sync &8(&fBot&8)'
+    - '&f * &c/hybridsync bot info &8- &fGeneral bot info'
+    - '&f * &c/hybridsync bot send &8- &fMake the bot send a message'
+    - '&f * &c/hybridsync bot shutdown &8- &fFully shutdown the bot'
+    - '&c*&8&m-----------&c*&8&m------------------&c*&8&m-----------&c*'
+
+bot:
+  info:
+    - '&c*&8&m-----------&c*&8&m------------------&c*&8&m-----------&c*'
+    - '&c     &lBot Information'
+    - '&f * &cStatus&f: %status%'
+    - '&f * &cPing&f: %ping%'
+    - '&f '
+    - '&c     &lHooks'
+    - '&f * &cLocal&f: %local%'
+    - '&f * &cLitebans&f: %litebans%'
+    - '&f * &cLuckperms&f: %luckperms%'
+    - '&c*&8&m-----------&c*&8&m------------------&c*&8&m-----------&c*'
+  send:
+    sent: '%prefix% You &csuccessfully &fsent a message using the bot.'
+    usage: '%prefix% Usage: &c/hybridsync bot send [channelID] <message>'
+    spaces: '%prefix% Error: &cYou must use underscores as spaces'
+  shutdown: '%prefix% Attempting to shut down the bot...'
+
+link:
+  usage: '%prefix% Type &cs-link &fin &c#discord-sync &fto start linking your account.'
+  invalid-code: '%prefix% The code &c%code% &fwas &cinvalid&f.'
+  successful: '%prefix% Your account has been linked to &c%user%&f. Type &c/unlink &fto unlink your account.'
+  already-linked: '%prefix% You are already linked to &c%user%&f.'
+
+unlink:
+  usage: '%prefix% Usage: &c/unlink &7(Must be linked)'
+  not-linked: '%prefix% You must be &clinked &fto execute this command.'
+  successful: '%prefix% You were unlinked from &c%user%&f.'

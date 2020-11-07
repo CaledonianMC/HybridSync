@@ -1,0 +1,74 @@
+# HybridSync discord sync file generated using HybridSync-1.0
+# This plugin mainly supports 1.8.8, but may work in later versions
+
+guild:
+  guild-id: '730174768610803742'
+  sync-channel: '730588398762459216'
+  guild-name: 'ExampleServer'
+
+messages:
+  start:
+    guild-message: "A code has been sent to your private DM''s. \nMake sure that your private messages are open."
+    color:
+      red: 50
+      green: 137
+      blue: 168
+    author:
+      message: 'Hybrid Discord Sync'
+      image: 'https://i.imgur.com/IRmeKNG.png'
+    description: "You have just started the discord linking process. This code will expire in **60 seconds**."
+    code:
+      title: 'Code'
+      info: '``/link %code%``'
+    expires:
+      title: 'Expires'
+      info: '%expires%'
+    footer:
+      message: 'HybridSync - Developed by Caledonian EH'
+      image: 'https://i.imgur.com/IRmeKNG.png'
+
+  success:
+    color:
+      red: 33
+      green: 222
+      blue: 62
+    author:
+      message: 'Hybrid Discord Sync'
+      image: 'https://i.imgur.com/IRmeKNG.png'
+    description: "You have just started the discord linking process. This code will expire in **60 seconds**."
+    player:
+      title: 'Player'
+      info: '%player%'
+    rank:
+      title: 'Rank'
+      info: '%primary_rank% *(%synced%)*'
+    footer:
+      message: 'HybridSync - Developed by Caledonian EH'
+      image: 'https://i.imgur.com/IRmeKNG.png'
+    thumbnail-url: 'https://cravatar.eu/helmhead/%player%/128.png'
+
+  unlink:
+    color:
+      red: 253
+      green: 70
+      blue: 80
+    author:
+      message: 'Hybrid Discord Sync'
+      image: 'https://i.imgur.com/IRmeKNG.png'
+    description: "You have just unlinked your minecraft account from our discord.\nYou can always relink using s-link"
+    player:
+      title: 'Player'
+      info: '%player%'
+    footer:
+      message: 'HybridSync - Developed by Caledonian EH'
+      image: 'https://i.imgur.com/IRmeKNG.png'
+    thumbnail-url: 'https://cravatar.eu/helmhead/%player%/128.png'
+# Rank Sync
+ranks:
+  owner:
+    use-nickname: true
+    server-name: 'owner'
+    discord-rank: 'Owner'
+    secondary-ranks:
+      - 'Discord Admin'
+    discord-nickname: 'Owner | %player%'

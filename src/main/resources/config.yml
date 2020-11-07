@@ -1,0 +1,38 @@
+# HybridSync config file generated using HybridSync-${project.version}
+# This plugin mainly supports 1.8.8, but may work in later versions
+
+# MySQL
+mysql: # NOT SUPPORTED
+  enable: false
+  print-sql: true # Send a large SQL message in the console
+  login:
+    host: ''
+    database: ''
+    username: ''
+    password: ''
+    port: 3306 # Usually the default port
+
+core:
+  server-name: 'ExampleServer'
+
+discord-sync:
+  host-server: true # This will disable the bot from sending double messages.
+  enable: true
+  realtime-ranks: true
+  realtime-interval: 300 # (15 seconds in ticks)
+  debug: false # Only enable if you're instructed to
+
+discord:
+  toggles:
+    server-status: true
+    staff-joins: true
+    command-spy: true
+    litebans: true
+    luckperms: true
+  badges:
+    owner: 'hybridsync.badge.owner'
+    manager: 'hybridsync.badge.manager'
+    admin: 'hybridsync.badge.admin'
+    mod: 'hybridsync.badge.mod'
+    helper: 'hybridsync.badge.helper'
+    builder: 'hybridsync.badge.builder'

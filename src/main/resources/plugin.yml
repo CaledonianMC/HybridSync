@@ -1,0 +1,12 @@
+name: HybridSync
+version: ${project.version}
+main: me.caledonian.hybridsync.HybridSync
+api-version: 1.16
+authors: [ Caledonian ]
+softdepend: [LiteBans]
+description: Discord Sync bot for Hybrid servers
+commands:
+  hybridsync:
+  link:
+  unlink:
+  list:

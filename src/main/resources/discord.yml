@@ -1,0 +1,206 @@
+# HybridSync discord file generated using HybridSync-1.0
+# This plugin mainly supports 1.8.8, but may work in later versions
+
+setup:
+  bot-token: 'NzY2NDIxMzA5NzM4NzEzMTM4.X4jHdw.YycN8QOaOfqB0pFL7wdXCGqg4Sg' # Make an application on https://discord.com/developers/applications
+  status: 2 # Online = 1, Idle = 2, DND = 3, Offline = 4
+  activity: 'Hybrid Network' # Watching <activity>
+
+channels:
+  development: '730588398762459216' # Leave empty
+  general: '730588398762459216'
+  litebans: '766421963627298876'
+  luckperms: '766422914815754261'
+  command: '730588398762459216'
+
+# Discord Server Alerts
+online:
+  color:
+    red: 33
+    green: 222
+    blue: 62
+  author:
+    message: 'Server Status Alert'
+    image: 'https://i.imgur.com/IRmeKNG.png'
+  server:
+    title: 'Server'
+    info: '%server%'
+  status:
+    title: 'Status'
+    info: 'Online'
+  footer:
+    message: 'HybridSync - Developed by Caledonian EH'
+    image: 'https://i.imgur.com/IRmeKNG.png'
+
+offline:
+  color:
+    red: 253
+    green: 70
+    blue: 70
+  author:
+    message: 'Server Status Alert'
+    image: 'https://i.imgur.com/IRmeKNG.png'
+  server:
+    title: 'Server'
+    info: '%server%'
+  status:
+    title: 'Status'
+    info: 'Offline'
+  footer:
+    message: 'HybridSync - Developed by Caledonian EH'
+    image: 'https://i.imgur.com/IRmeKNG.png'
+
+# Litebans Hook
+ban:
+  color:
+    red: 50
+    green: 137
+    blue: 168
+  author:
+    message: 'Player Punishment Alert'
+    image: 'https://i.imgur.com/IRmeKNG.png'
+  description: "A player has just been banned.\n \n**Reason** %reason%\n**Duration** %duration%\n**Type:** %type%"
+  server:
+    title: 'Server'
+    info: '%server%'
+  player:
+    title: 'Player'
+    info: '%player%'
+  staff:
+    title: 'Executor'
+    info: '%executor%'
+  footer:
+    message: 'HybridSync - Developed by Caledonian EH'
+    image: 'https://i.imgur.com/IRmeKNG.png'
+
+mute:
+  color:
+    red: 50
+    green: 137
+    blue: 168
+  author:
+    message: 'Player Punishment Alert'
+    image: 'https://i.imgur.com/IRmeKNG.png'
+  description: "A player has just been muted.\n \n**Reason** %reason%\n**Duration** %duration%\n**Type:** %type%"
+  server:
+    title: 'Server'
+    info: '%server%'
+  player:
+    title: 'Player'
+    info: '%player%'
+  staff:
+    title: 'Executor'
+    info: '%executor%'
+  footer:
+    message: 'HybridSync - Developed by Caledonian EH'
+    image: 'https://i.imgur.com/IRmeKNG.png'
+
+warn:
+  color:
+    red: 50
+    green: 137
+    blue: 168
+  author:
+    message: 'Player Punishment Alert'
+    image: 'https://i.imgur.com/IRmeKNG.png'
+  description: "A player has just been warned.\n \n**Reason** %reason%\n**Type:** %type%"
+  server:
+    title: 'Server'
+    info: '%server%'
+  player:
+    title: 'Player'
+    info: '%player%'
+  staff:
+    title: 'Executor'
+    info: '%executor%'
+  footer:
+    message: 'HybridSync - Developed by Caledonian EH'
+    image: 'https://i.imgur.com/IRmeKNG.png'
+
+kick:
+  color:
+    red: 50
+    green: 137
+    blue: 168
+  author:
+    message: 'Player Punishment Alert'
+    image: 'https://i.imgur.com/IRmeKNG.png'
+  description: "A player has just been kicked.\n \n**Reason** %reason%\n**Type:** %type%"
+  server:
+    title: 'Server'
+    info: '%server%'
+  player:
+    title: 'Player'
+    info: '%player%'
+  staff:
+    title: 'Executor'
+    info: '%executor%'
+  footer:
+    message: 'HybridSync - Developed by Caledonian EH'
+    image: 'https://i.imgur.com/IRmeKNG.png'
+
+unban:
+  color:
+    red: 50
+    green: 137
+    blue: 168
+  author:
+    message: 'Player Punishment Alert'
+    image: 'https://i.imgur.com/IRmeKNG.png'
+  description: "A player has just been unbanned.\n \n**Type:** %type%"
+  server:
+    title: 'Server'
+    info: '%server%'
+  player:
+    title: 'Player'
+    info: '%player%'
+  staff:
+    title: 'Executor'
+    info: '%executor%'
+  footer:
+    message: 'HybridSync - Developed by Caledonian EH'
+    image: 'https://i.imgur.com/IRmeKNG.png'
+
+unmute:
+  color:
+    red: 50
+    green: 137
+    blue: 168
+  author:
+    message: 'Player Punishment Alert'
+    image: 'https://i.imgur.com/IRmeKNG.png'
+  description: "A player has just been unmuted.\n \n**Type:** %type%"
+  server:
+    title: 'Server'
+    info: '%server%'
+  player:
+    title: 'Player'
+    info: '%player%'
+  staff:
+    title: 'Executor'
+    info: '%executor%'
+  footer:
+    message: 'HybridSync - Developed by Caledonian EH'
+    image: 'https://i.imgur.com/IRmeKNG.png'
+
+unwarn:
+  color:
+    red: 50
+    green: 137
+    blue: 168
+  author:
+    message: 'Player Punishment Alert'
+    image: 'https://i.imgur.com/IRmeKNG.png'
+  description: "A player has just been unwarned.\n \n**Type:** %type%"
+  server:
+    title: 'Server'
+    info: '%server%'
+  player:
+    title: 'Player'
+    info: '%player%'
+  staff:
+    title: 'Executor'
+    info: '%executor%'
+  footer:
+    message: 'HybridSync - Developed by Caledonian EH'
+    image: 'https://i.imgur.com/IRmeKNG.png'
