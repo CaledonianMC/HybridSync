@@ -6,6 +6,7 @@ import me.caledonian.hybridsync.listener.JoinData;
 import me.caledonian.hybridsync.listener.LiteBansAdded;
 import me.caledonian.hybridsync.listener.LiteBansRemoval;
 import me.caledonian.hybridsync.managers.CommandManager;
+import me.caledonian.hybridsync.managers.PlaceholderHandler;
 import me.caledonian.hybridsync.utils.Data;
 import me.caledonian.hybridsync.utils.Files;
 import me.caledonian.hybridsync.utils.Logger;
@@ -90,6 +91,9 @@ public final class HybridSync extends JavaPlugin {
             setupPermssions();
             //Bukkit.getServer().getPluginManager().registerEvents(new RankSync(this, bot), this);
         }else{Logger.log(Logger.LogLevel.ERROR, "Could not find Vault, discord rank sync will be disabled.");}
+        if(getServer().getPluginManager().getPlugin("PlaceholderAPI") != null){
+            new PlaceholderHandler().register();
+        }else{Logger.log(Logger.LogLevel.ERROR, "Could not find PlaceholderAPI, external placeholders will be disabled.");}
         Bukkit.getServer().getPluginManager().registerEvents(new JoinData(this, bot), this);
     }
 

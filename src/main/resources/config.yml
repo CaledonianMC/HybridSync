@@ -36,3 +36,11 @@ discord:
     mod: 'hybridsync.badge.mod'
     helper: 'hybridsync.badge.helper'
     builder: 'hybridsync.badge.builder'
+
+placeholders:
+  isvanished:
+    true: '&aLinked!'
+    false: '&cUnlinked'
+  linkedto:
+    user: '&a%user%'
+    not-linked: '&cN/A'
