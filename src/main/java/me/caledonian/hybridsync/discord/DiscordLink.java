@@ -24,7 +24,7 @@ public class DiscordLink extends ListenerAdapter {
     public void onGuildMessageReceived(GuildMessageReceivedEvent e){
         String[] args = e.getMessage().getContentRaw().split("\\s+");
 
-        if(args[0].equalsIgnoreCase("s-link")){
+        if(args[0].equalsIgnoreCase(Files.sync.getString("guild.command"))){
             e.getChannel().sendMessage(Files.sync.getString("messages.start.guild-message"));
             String code = getSaltString();
             e.getAuthor().openPrivateChannel().queue((channel) ->{

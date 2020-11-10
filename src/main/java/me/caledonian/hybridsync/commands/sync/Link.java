@@ -61,7 +61,7 @@ public class Link implements CommandHandler {
                             Sync.sync(p, bot, DiscordLink.getKey(DiscordLink.codes, args[0].toString()));
 
                             Bukkit.getScheduler().runTaskLater(plugin, () ->{
-                                DiscordLink.codes.remove(args[0]);
+                                DiscordLink.codes.remove(Data.get().getString(p.getUniqueId()+".discord"));
                                 if(Files.config.getBoolean("discord-sync.debug") == true){
                                     Bukkit.getConsoleSender().sendMessage(Utils.chat("&c(Debug) &fCodes for &c"+p.getName()+")&f were deleted. &c[Linked Account]"));
                                 }

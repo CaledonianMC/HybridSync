@@ -5,6 +5,7 @@ guild:
   guild-id: '730174768610803742'
   sync-channel: '730588398762459216'
   guild-name: 'ExampleServer'
+  command: 's-link'
 
 messages:
   start:

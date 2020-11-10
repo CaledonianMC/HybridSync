@@ -68,7 +68,7 @@ public class Sync {
             List<String> ranks = Files.sync.getStringList("ranks."+string+".secondary-ranks");
 
             Role role = bot.getGuildById(Files.sync.getString("guild.guild-id")).getRolesByName(Files.sync.getString("ranks."+string+".discord-rank"), true).get(0);
-            bot.getGuildById(Files.sync.getString("guild.guild-id")).addRoleToMember(id, role).queue();
+            bot.getGuildById(Files.sync.getString("guild.guild-id")).removeRoleFromMember(id, role).queue();
 
             for (String x : ranks) {
                 // Debug
