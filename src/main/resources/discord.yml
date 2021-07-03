@@ -2,16 +2,16 @@
 # This plugin mainly supports 1.8.8, but may work in later versions
 
 setup:
-  bot-token: 'NzY2NDIxMzA5NzM4NzEzMTM4.X4jHdw.YycN8QOaOfqB0pFL7wdXCGqg4Sg' # Make an application on https://discord.com/developers/applications
+  bot-token: '' # Make an application on https://discord.com/developers/applications
   status: 2 # Online = 1, Idle = 2, DND = 3, Offline = 4
   activity: 'Hybrid Network' # Watching <activity>
 
 channels:
-  development: '730588398762459216' # Leave empty
-  general: '730588398762459216'
-  litebans: '766421963627298876'
-  luckperms: '766422914815754261'
-  command: '730588398762459216'
+  development: '' # Leave empty
+  general: ''
+  litebans: ''
+  luckperms: ''
+  command: ''
 
 # Discord Server Alerts
 online:
